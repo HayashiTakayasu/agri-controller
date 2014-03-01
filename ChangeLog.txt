@@ -1,0 +1,36 @@
+==0.0.8
+* Fixed for backward compatibility. Not perfect, but available in a few modifications
+
+==AgriController 0.0.7
+* AgriController::multiple_pulse_timer  Fixed
+* win,linux compatible.
+* AgriController::gruff::thermo_gruff_generate  changed. All data to '.jpg' graph
+* WR1010::thermo_data                 fixed
+* Bcc::bcc                            fixed
+* thermo_data_logger_thread           log text fixed
+ 
+===Moved  IO device to /device
+* device/dacs  
+* device/kr 
+* device/wr1010                              add
+* device/ma                                  add
+* device/mch383 CO2 logger                   add
+* device/tr.rb (T&D,ESPEC, UV logger)        add
+* device/et360.rb (IO-relay board)           add
+===other
+* ttyUSBwatchdog.rb                   add
+* error_caption.rb                    changed
+* Loger.rb                            changed
+* wet_sensor.rb wait sec              changed
+* bcc.rb                              refactored
+===Gruff
+* gruff/base.rb                       changed (ruby1.9.3 probrem)
+* gruff/base.rb{"line 688+- normalize(true)"=> "normarize()"} Bug?.
+    I can't draw,changed above.
+* separate "gruff" scripts. if you need , require "agri-controller/gruff"
+===Delete
+* serial.rb                           deteted. use Rubygem "serialport" ="1.0.4" win,linux compatible.or existing OS application(stty,MODE)  
+
+==AgriController 0.0.0
+
+* first. only for Windows
